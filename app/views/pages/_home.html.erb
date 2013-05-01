@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+	<h1>You're Logged in!</h1>
+<% else %>
+	<div class="hero-unit">
+		<h1>Welcome to IA Prototype!</h1>
+		<p>
+			You have found the site for the InkAssembly Prototype project.	
+		<p>
+			<%= link_to 'Sign up now!', new_user_registration_path , class: "btn btn-large btn-primary" %>
+		<p>
+	</div>
+<% end %>
